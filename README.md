@@ -1,52 +1,41 @@
-# About {{ Name }}
+# About starterkit-mobile-application-swift
 
-ERNI Academy StarterKit, PoC, or Gidelines. This is an about description of your repository.
+ERNI Academy mobile boilerplate to start a IOS/MacOS application.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Tools A](https://example.com)
+- [Swift](https://developer.apple.com/swift/)
 - [Framework B](https://example.com)
 - [Project C](https://example.com)
 
 ## Features
 
-- Be awesome
-- Make things faster
+- SwiftUI
+- Shared code between MacOS and IOS
+- Multi-language support
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+In the following section you will find out how to setup your enviroment so that later on you are able to clone this repository and start developing using this StarterKit.
 
 ## Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+- Xcode (13.4.1 and up)
 
 ## Installation
 
-Installation instructions {{ Name }} by running:
+Installation instructions starterkit-mobile-application-swift by running:
 
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/ERNI-Academy/Project-Name.git
+   git clone https://github.com/ERNI-Academy/starterkit-mobile-application-swift.git
    ```
 
-2. Install packages
-
-    ```sh
-    npm install
-    ```
-
-3. Configure
-
-    ```JS
-    const API_KEY = 'ENTER YOUR API';
-    ```
+2. Run in Xcode by selecting target (IOS/Mac)
 
 ## Contributing
 
