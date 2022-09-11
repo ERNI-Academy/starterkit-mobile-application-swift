@@ -8,8 +8,6 @@ ERNI Academy mobile boilerplate to start a IOS/MacOS application.
 ## Built With
 
 - [Swift](https://developer.apple.com/swift/)
-- [Framework B](https://example.com)
-- [Project C](https://example.com)
 
 ## Features
 
