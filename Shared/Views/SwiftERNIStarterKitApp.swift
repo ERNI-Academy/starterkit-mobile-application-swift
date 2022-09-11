@@ -24,6 +24,7 @@ final class TabRouter: ObservableObject {
 @main
 struct SwiftERNIStarterKitApp: App {
     @StateObject var router = TabRouter()
+    @State(initialValue: "en") var lang: String
     
     var body: some Scene {
         WindowGroup {
@@ -34,29 +35,21 @@ struct SwiftERNIStarterKitApp: App {
                     .tabItem {
                         Label("About", systemImage: "info")
                     }
+                    .environment(\.locale, .init(identifier: lang))
                 ItemsPage()
                     .tag(Screen.browse)
                     .tabItem {
                         Label("Browse", systemImage: "magnifyingglass")
                     }
-                ChangeLanguagePage()
+                    .environmentObject(ItemViewModel())
+                    .environment(\.locale, .init(identifier: lang))
+                ChangeLanguagePage(lang: $lang)
                     .tag(Screen.language)
                     .tabItem {
                         Label("Language", systemImage: "globe")
                     }
+                    .environment(\.locale, .init(identifier: lang))
             }
-            #if os(macOS)
-            .toolbar {
-                ToolbarItem {
-                    if (router.screen == Screen.browse) {
-                        Button(action: {}, label: {
-                            Label("Add", systemImage: "plus.circle.fill")
-                        })
-                        .labelStyle(VerticalLabelStyle())
-                    }
-                }
-            }
-            #endif
         }
     }
 }

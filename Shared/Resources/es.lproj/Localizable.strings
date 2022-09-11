@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SwiftERNIStarterKit
+
+  Created by Jeffrey Milanes on 9/1/22.
+  
+*/
+
+"About" = "Sobre";
+"About_Title" = "Comienza a desarrollar ahora";
+"About_Description" = "Este kit de inicio ofrece una aplicación IOS y MacOS hecha con Swift";
+"Learn_More" = "Aprende más";
+"Browse" = "Navegar";
+"Add" = "Agregar";
+"Item" = "Artículo:";
+"Description" = "Descripción:";
+"Save" = "Ahorrar";
+"Cancel" = "Cancelar";
+"Language" = "Idioma";
+"No_Item" = "Ningún artículo seleccionado";

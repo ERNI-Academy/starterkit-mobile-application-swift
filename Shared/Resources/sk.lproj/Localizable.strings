@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SwiftERNIStarterKit
+
+  Created by Jeffrey Milanes on 9/11/22.
+  
+*/
+
+"About" = "O";
+"About_Title" = "Začnite sa teraz rozvíjať";
+"About_Description" = "Tento štartovací kit ponúka aplikáciu IOS a MacOS vyrobenú pomocou Swift";
+"Learn_More" = "Uč sa viac";
+"Browse" = "Prehľadávať";
+"Add" = "Pridať";
+"Item" = "Položka:";
+"Description" = "Popis:";
+"Save" = "Uložiť";
+"Cancel" = "Zrušiť";
+"Language" = "Jazyk";
+"No_Item" = "Žiadna vybratá položka";

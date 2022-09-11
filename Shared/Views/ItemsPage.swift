@@ -8,28 +8,35 @@
 import SwiftUI
 
 struct ItemsPage: View {
-    
-    @State private var addMode = false
+    @EnvironmentObject var item: ItemViewModel
+    @State private var modalType: ModalType? = nil
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(0..<25, id: \.self, content: { i in
-                    NavigationLink("(\(i)) item, This is an item description", destination: AboutPage())
-                })
+            List() {
+                ForEach(item.items) { item in
+                    Button {
+                        modalType = .view(item)
+                    } label: {
+                        Text(item.name)
+                            .font(.title3)
+
+                    }
+                }
             }
-            #if os(iOS)
             .toolbar {
-                ToolbarItem {
-                    Button(action: {}, label: {
+                ToolbarItem(placement: .automatic) {
+                    Button(action: {
+                        modalType = .new
+                    }, label: {
                         Label("Add", systemImage: "plus.circle.fill")
                     })
                     .labelStyle(VerticalLabelStyle())
                 }
             }
-            #endif
-            Text("No selected item")
+            Text("No_Item")
         }
+        .sheet(item: $modalType) { $0 }
     }
 }
 
@@ -45,5 +52,6 @@ struct VerticalLabelStyle: LabelStyle {
 struct ItemsPage_Previews: PreviewProvider {
     static var previews: some View {
         ItemsPage()
+            .environmentObject(ItemViewModel())
     }
 }

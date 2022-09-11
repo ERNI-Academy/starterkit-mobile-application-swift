@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SwiftERNIStarterKit
+
+  Created by Jeffrey Milanes on 9/1/22.
+  
+*/
+
+"About" = "Tungkol sa";
+"About_Title" = "Simulan ang pagbuo ngayon";
+"About_Description" = "Nag-aalok ang starterkit na ito ng IOS at MacOS application na ginawa gamit ang Swift";
+"Learn_More" = "Matuto pa";
+"Browse" = "Mag-browse";
+"Add" = "Idagdag";
+"Item" = "Item:";
+"Description" = "Paglalarawan:";
+"Save" = "I-save";
+"Cancel" = "Kanselahin";
+"Language" = "Wika";
+"No_Item" = "Walang napiling item";

@@ -17,14 +17,10 @@ struct AboutPage: View {
                 .padding(20)
             ScrollView(.vertical) {
                 VStack(spacing: 20) {
-                    Text("Start developing now")
+                    Text("About_Title")
                     .font(.system(size: 30))
-                    Text("This starterkit offers a IOS and MacOS application made with Swift")
-                    Button {
-                    
-                    } label: {
-                        Text("Learn more")
-                    }
+                    Text("About_Description")
+                    Link("Learn_More", destination: URL(string: "https://developer.apple.com/swift/")!)
                 }
             }
         }
